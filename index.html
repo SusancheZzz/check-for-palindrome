@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Полиндром</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .button-nice {
+            border-radius: 12px;
+            font-size: 18px;
+            line-height: 24px;
+            padding: 5px 40px;
+            background: #207EED;
+            color: white;
+            border: 2px solid #207EED;
+        }
+
+        .button-nice:hover {
+            background: #E5F7FE;
+            color: #207EED;
+        }
+    </style>
+</head>
+<body>
+<h1 class="header">Это тестовая страничка</h1>
+<div>
+    <p>Нажмите на кнопку, чтобы показать картинку</p>
+    <button class="button-nice" onclick="onButtonClick()">Нажми сюда</button>
+
+    <button class="button-nice" onclick="simpleFunction(1)">Кнопка 1</button>
+    <button onclick="simpleFunction(2)">Кнопка 2</button>
+    <div id="asset-container"></div>
+    <input id="input">
+</div>
+</body>
+<script>
+
+    const stringifyArray = (array) => {
+        let str = "[ "
+        array.forEach(
+            item => {
+                str += item + ", "
+            })
+        str.slice(0, -2)
+        str += " ]"
+
+        this.incrementor = this.incrementor ? this.incrementor + 1 : 1
+        console.log("stringify called:", this.incrementor)
+
+        return str
+    }
+
+    const simpleFunction = (value) => {
+        console.log(`this simple function called from point ${value}`)
+    }
+</script>
+<script src="main.js"></script>
+</html>
